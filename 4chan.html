@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>/x/ – Forchan Mock • Paranormal</title>
+  <style>
+    /* ====== Estilo geral inspirado em imageboards clássicos ====== */
+    :root {
+      --bg: #ffffee;           /* fundo bege clássico */
+      --text: #000;            /* texto padrão */
+      --link: #0000ee;         /* link azul */
+      --link-visited: #551a8b; /* link visitado roxo */
+      --post-bg: #f0e0d6;      /* caixa de post */
+      --post-border: #d9bfb7;  /* borda da caixa */
+      --header-bg: #d6daf0;    /* topo/board */
+      --header-border: #b7c5d9;/* borda topo */
+      --greentext: #789922;    /* >greentext */
+      --subtle: #555;
+    }
+
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 14px/1.4 Arial, Helvetica, sans-serif;
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:visited { color: var(--link-visited); }
+
+    .topbar {
+      background: var(--header-bg);
+      border-bottom: 1px solid var(--header-border);
+      padding: 8px 0;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    }
+    .topbar .wrap { width: 980px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+    .board-title { font-weight: bold; font-size: 18px; }
+    .board-desc { color: var(--subtle); }
+
+    .wrap-main { width: 980px; margin: 12px auto 80px; display: grid; grid-template-columns: 1fr 280px; gap: 16px; }
+
+    .thread {
+      display: block;
+    }
+
+    .thread-header { display: flex; justify-content: space-between; align-items: center; margin: 8px 0 12px; }
+    .thread-header .subject { font-weight: bold; }
+
+    .post {
+      background: var(--post-bg);
+      border: 1px solid var(--post-border);
+      padding: 8px 10px;
+      margin: 0 0 10px 0;
+    }
+    .post-header {
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; font-size: 13px;
+    }
+    .post-header .name { font-weight: bold; }
+    .post-header .trip { color: #117743; }
+    .post-header .meta { color: var(--subtle); }
+    .post-header .no { margin-left: auto; }
+    .post-header .no a { font-weight: bold; }
+
+    .post-body { white-space: pre-wrap; }
+    .post-body .quote { color: var(--greentext); }
+
+    .file { margin: 6px 0 8px; font-size: 12px; color: var(--subtle); }
+
+    /* Quick Reply */
+    .qr {
+      position: sticky;
+      top: 12px;
+      align-self: start;
+      background: var(--post-bg);
+      border: 1px solid var(--post-border);
+      padding: 10px;
+    }
+    .qr h3 { margin: 0 0 8px; font-size: 14px; }
+    .qr label { display: block; font-size: 12px; color: var(--subtle); margin: 6px 0 2px; }
+    .qr input[type="text"], .qr input[type="number"], .qr textarea {
+      width: 100%; box-sizing: border-box; font: 13px/1.4 Arial, Helvetica, sans-serif;
+      padding: 6px; border: 1px solid var(--post-border); background: #fff;
+    }
+    .qr textarea { min-height: 120px; resize: vertical; }
+    .qr .row { display: flex; gap: 8px; }
+    .qr .btns { display: flex; gap: 8px; margin-top: 8px; }
+    .btn { padding: 6px 10px; border: 1px solid var(--post-border); background: #eee; cursor: pointer; }
+    .btn:hover { background: #e2e2e2; }
+
+    .footer { text-align: center; color: var(--subtle); font-size: 12px; padding: 24px 0; }
+
+    /* simples responsivo */
+    @media (max-width: 1040px) {
+      .wrap-main { grid-template-columns: 1fr; }
+      .qr { position: relative; top: 0; }
+      .topbar .wrap, .wrap-main { width: calc(100% - 24px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <div class="board-title">/x/ – Paranormal</div>
+      <div class="board-desc">Discussões sobre ocultismo, fenômenos e ciência limítrofe.</div>
+    </div>
+  </div>
+
+  <div class="wrap-main">
+    <!-- Coluna principal -->
+    <main class="thread" id="thread">
+      <div class="thread-header">
+        <div class="subject">Cozinhado</div>
+        <div class="controls"><a href="#qr">Reply</a></div>
+      </div>
+
+      <!-- OP Post -->
+      <article class="post" id="p40919838" data-no="40919838">
+        <header class="post-header">
+          <span class="name">HR</span>
+          <span class="meta">08/16/20(Sat)15:14:03</span>
+          <span class="no">No. <a href="#" class="no-link" data-no="40919838">40919838</a></span>
+        </header>
+        <section class="post-body">
+Tenho estudado padrões de consciência em materiais antigos, e descobri fenômenos que desafiam a física clássica.
+Livros e artefatos podem influenciar a percepção do observador — pequenas alterações nos símbolos provocam mudanças sutis em sua atenção e memória.
+
+Ainda não sei explicar mecanicamente, mas a correlação entre fórmulas matemáticas e desenhos místicos é fascinante.
+Alguém já tentou algo parecido?
+        </section>
+      </article>
+
+      <article class="post" id="p40919843" data-no="40919843">
+        <header class="post-header">
+          <span class="name">HR</span>
+          <span class="meta">08/18/20(Mon)11:13:14</span>
+          <span class="no">No. <a href="#" class="no-link" data-no="40919843">40919843</a></span>
+        </header>
+        <section class="post-body">
+Resultados preliminares mostram que padrões geométricos antigos, quando expostos a frequências luminosas específicas, provocam microvariações perceptíveis no observador.
+A explicação teórica ainda é obscura, mas parece haver correlação com conceitos da física quântica e estudos de coerência cognitiva.
+
+Estou documentando tudo com precisão, mas careço de especialistas em simbologia para interpretar nuances.
+O objetivo: determinar se há princípios universais que liguem geometria, luz e mente humana.
+        </section>
+      </article>
+
+      <article class="post" id="p40919848" data-no="40919848">
+        <header class="post-header">
+          <span class="name">SolInvictus</span>
+          <span class="meta">08/21/20(Thu)19:10:31</span>
+          <span class="no">No. <a href="#" class="no-link" data-no="40919848">40919848</a></span>
+        </header>
+        <section class="post-body">
+HR, suas descobertas são raras.
+Poucos conseguem combinar ciência e ocultismo com coerência.
+O que você chama de “microvariações perceptíveis” é exatamente a frequência que muitos buscam sem nunca conseguir mensurar.
+
+Se estiver disposto, posso compartilhar métodos e materiais pouco conhecidos, que expandem essas respostas além do que a física moderna ou o ocultismo convencional oferecem.
+Seu talento é… valioso.
+        </section>
+      </article>
+
+      <article class="post" id="p40919854" data-no="40919854">
+        <header class="post-header">
+          <span class="name">HR</span>
+          <span class="meta">08/21/20(Sat)23:17:18</span>
+          <span class="no">No. <a href="#" class="no-link" data-no="40919854">40919854</a></span>
+        </header>
+        <section class="post-body">
+Agradeço a observação. Normalmente sou cauteloso com sugestões externas, mas sua proposta é intrigante.
+Quais métodos você sugere para validar empiricamente a relação entre geometria, luz e consciência?
+Podemos tentar experimentos controlados — quero dados mensuráveis, mesmo que os conceitos pareçam fora do comum.
+
+Preciso entender os limites entre rigor científico e interpretação simbólica.
+        </section>
+      </article>
+
+      <article class="post" id="p40919866" data-no="40919866">
+        <header class="post-header">
+          <span class="name">SolInvictus</span>
+          <span class="meta">08/22/20(Fri)08:23:48</span>
+          <span class="no">No. <a href="#" class="no-link" data-no="40919866">40919866</a></span>
+        </header>
+        <section class="post-body">
+HR, antes que avance muito sozinho, quero dizer: confio na Ordo Realitas.
+Eles têm conhecimento e disciplina que a maioria ignora.
+Se você seguir rigorosamente os princípios, nada que descobrirá será perigoso e poderá nos levar a entendimentos que poucos jamais verão. Enfim ME chame de Anthony M.
+        </section>
+      </article>
+
+      <article class="post" id="p40919880" data-no="40919880">
+        <header class="post-header">
+          <span class="name">HR</span>
+          <span class="meta">08/22/20(Fri)15:22:17</span>
+          <span class="no">No. <a href="#" class="no-link" data-no="40919880">40919880</a></span>
+        </header>
+        <section class="post-body">
+Interessante… Entendo o valor de estruturas organizadas, mas sempre questiono limites éticos.
+Minha prioridade é garantir que experimentos sejam documentados e reproduzíveis, e que ninguém seja prejudicado.
+        </section>
+      </article>
+
+      <article class="post" id="p40919906" data-no="40919906">
+        <header class="post-header">
+          <span class="name">SolInvictus</span>
+          <span class="meta">04/02/21(Wed)15:26:30</span>
+          <span class="no">No. <a href="#" class="no-link" data-no="40919906">40919906</a></span>
+        </header>
+        <section class="post-body">
+Passei muito tempo escondendo o que realmente penso. Antes, confiei na estrutura da Ordem, acreditei que eles me dariam respostas, que me protegeriam do vazio que consumiu a minha vida. Eu me entreguei, segui as regras, obedeci… e no fim, só me restou a mentira e a ausência. Minha filha continua do outro lado, e eles nunca quiseram trazê-la de volta.
+
+Não tenho mais fé na Ordo Realitas. Eles se alimentam da ilusão de que lutam pelo equilíbrio, mas na verdade só enterram o que não compreendem. Meu ódio cresce cada vez que lembro de como me fizeram perder tempo, me calando, me observando como se eu fosse uma ameaça. Talvez eu seja mesmo.
+        </section>
+      </article>
+
+      <article class="post" id="p40919919" data-no="40919919">
+        <header class="post-header">
+          <span class="name">SolInvictus</span>
+          <span class="meta">04/02/21(Wed)16:17:23</span>
+          <span class="no">No. <a href="#" class="no-link" data-no="40919919">40919919</a></span>
+        </header>
+        <section class="post-body">
+Quero me encontrar com você. Não em fóruns, não em mensagens escondidas. Pessoalmente. Sei que corre riscos ao aceitar, mas também sei que já cruzou uma linha ao matar o silêncio do ceticismo. Se você aceitar, encontraremos um lugar neutro.
+        </section>
+      </article>
+
+    </main>
+
+    <!-- Quick Reply / Post composer -->
+    <aside class="qr" id="qr">
+      <h3>Resposta Rápida</h3>
+      <label for="name">Nome</label>
+      <input id="name" type="text" placeholder="Anonymous" />
+
+      <div class="row">
+        <div style="flex:1">
+          <label for="subject">Assunto</label>
+          <input id="subject" type="text" placeholder="" />
+        </div>
+        <div style="width:110px">
+          <label for="no">No.</label>
+          <input id="no" type="number" placeholder="auto" />
+        </div>
+      </div>
+
+      <label for="comment">Comentário</label>
+      <textarea id="comment" placeholder=">>40919838\n(responda com >>No)"></textarea>
+
+      <div class="btns">
+        <button class="btn" id="btn-insert-quote">Citar último</button>
+        <button class="btn" id="btn-post">Postar</button>
+        <button class="btn" id="btn-clear">Limpar</button>
+      </div>
+      <small style="display:block; margin-top:6px; color:var(--subtle)">Esta é uma simulação local; nada é enviado à internet.</small>
+    </aside>
+  </div>
+
+  <footer class="footer">Mock Forchan • Somente para uso narrativo/RPG • © 2025</footer>
+
+  <script>
+    // ======= JS simples para citar e criar posts localmente (sem backend) =======
+    const threadEl = document.getElementById('thread');
+    const nameEl = document.getElementById('name');
+    const subjectEl = document.getElementById('subject');
+    const noEl = document.getElementById('no');
+    const commentEl = document.getElementById('comment');
+
+    // Clicar no número do post cola ">>No" na caixa
+    threadEl.addEventListener('click', (e) => {
+      const link = e.target.closest('.no-link');
+      if (!link) return;
+      e.preventDefault();
+      const no = link.dataset.no;
+      commentEl.value += (commentEl.value && !commentEl.value.endsWith('\n') ? '\n' : '') + '>>' + no + '\n';
+      commentEl.focus();
+    });
+
+    // Botão: citar o último post
+    document.getElementById('btn-insert-quote').addEventListener('click', () => {
+      const posts = Array.from(document.querySelectorAll('.post'));
+      const last = posts[posts.length - 1];
+      if (!last) return;
+      const no = last.dataset.no;
+      commentEl.value += (commentEl.value && !commentEl.value.endsWith('\n') ? '\n' : '') + '>>' + no + '\n';
+      commentEl.focus();
+    });
+
+    // Botão: limpar
+    document.getElementById('btn-clear').addEventListener('click', () => {
+      nameEl.value = '';
+      subjectEl.value = '';
+      noEl.value = '';
+      commentEl.value = '';
+    });
+
+    // Botão: postar (simulação local)
+    document.getElementById('btn-post').addEventListener('click', () => {
+      const name = nameEl.value.trim() || 'Anonymous';
+      const subject = subjectEl.value.trim();
+      const no = noEl.value.trim() || genNo();
+      const comment = sanitize(commentEl.value);
+
+      if (!comment) { alert('Escreva algo.'); return; }
+
+      const now = new Date();
+      const stamp = now.toLocaleString('en-US', {
+        month: '2-digit', day: '2-digit', year: '2-digit',
+        hour: '2-digit', minute: '2-digit', second: '2-digit',
+        hour12: false
+      }).replace(',', '');
+
+      const article = document.createElement('article');
+      article.className = 'post';
+      article.id = 'p' + no;
+      article.dataset.no = no;
+      article.innerHTML = `
+        <header class="post-header">
+          <span class="name">${escapeHtml(name)}</span>
+          <span class="meta">${stamp}</span>
+          <span class="no">No. <a href="#" class="no-link" data-no="${no}">${no}</a></span>
+        </header>
+        <section class="post-body">${formatComment(comment)}</section>
+      `;
+
+      threadEl.appendChild(article);
+      // limpar inputs
+      subjectEl.value = '';
+      noEl.value = '';
+      commentEl.value = '';
+      // rolar até o post
+      article.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    function genNo() {
+      // número pseudo-único estilo chan
+      const base = Math.floor(Math.random() * 90000000) + 10000000;
+      return String(base);
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>"']/g, m => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+      })[m]);
+    }
+
+    function sanitize(str) {
+      return str.replace(/\s+$/,'');
+    }
+
+    function formatComment(text) {
+      // transforma linhas iniciadas com '>' em greentext
+      const escaped = escapeHtml(text);
+      return escaped.split('\n').map(line => {
+        if (line.startsWith('>>')) {
+          // citações de post: transforma em link âncora se existir
+          const no = line.slice(2).trim();
+          return `<span class="quote">&gt;&gt;<a href="#p${no}">${no}</a></span>`;
+        }
+        if (line.startsWith('>')) {
+          return `<span class="quote">${line.replace(/^>/,'&gt;')}</span>`;
+        }
+        return line;
+      }).join('\n');
+    }
+  </script>
+</body>
+</html>
